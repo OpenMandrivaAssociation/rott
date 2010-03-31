@@ -79,18 +79,18 @@ popd
 
 %install
 # no make install target, DIY
-%__install -dm 755 %{buildroot}%{_bindir}
+%__install -dm 755 %{buildroot}%{_gamesbindir}
 %__install -m 755 %{name}/%{name}-* \
-	%{buildroot}%{_bindir}
+	%{buildroot}%{_gamesbindir}
 %__install -m 755 %{SOURCE1} \
-	%{buildroot}%{_bindir}/%{name}-shareware
+	%{buildroot}%{_gamesbindir}/%{name}-shareware
 %__install -m 755 %{SOURCE2} \
-	%{buildroot}%{_bindir}/%{name}-registered
+	%{buildroot}%{_gamesbindir}/%{name}-registered
 
 # the autodownloader-stuff
-%__install -dm 755 %{buildroot}%{_datadir}/%{name}
+%__install -dm 755 %{buildroot}%{_gamesdatadir}/%{name}
 %__install -m 644 %{SOURCE3} \
-	%{buildroot}%{_datadir}/%{name}
+	%{buildroot}%{_gamesdatadir}/%{name}
 
 # desktop file and icon stuff
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
@@ -118,9 +118,9 @@ popd
 %files shareware
 %defattr(-,root,root,-)
 %doc README doc/*.txt
-%{_bindir}/%{name}-shareware*
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/*
+%{_gamesbindir}/%{name}-shareware*
+%dir %{_gamesdatadir}/%{name}
+%{_gamesdatadir}/%{name}/*
 %{_mandir}/man6/%{name}-shareware.6*
 %{_datadir}/applications/%{name}-shareware.desktop
 %{_datadir}/pixmaps/%{name}.png
@@ -128,10 +128,9 @@ popd
 %files registered
 %defattr(-,root,root,-)
 %doc README doc/*.txt
-%{_bindir}/%{name}-registered*
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/*
+%{_gamesbindir}/%{name}-registered*
+%dir %{_gamesdatadir}/%{name}
+%{_gamesdatadir}/%{name}/*
 %{_mandir}/man6/%{name}-registered.6*
 %{_datadir}/applications/%{name}-registered.desktop
 %{_datadir}/pixmaps/%{name}.png
-
