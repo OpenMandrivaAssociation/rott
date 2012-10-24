@@ -1,7 +1,7 @@
 %define Werror_cflags	%nil
 
 Name:			rott
-Version:		1.1.1
+Version:		1.1.2
 Release:		%mkrel 1
 Summary:		Rise of the Triad
 Group:			Games/Arcade
