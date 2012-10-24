@@ -69,7 +69,7 @@ pushd rott
 	%__mv %{name} \
 		%{name}-shareware.bin
 
-	patch -p2 < %{SOURCE7}
+	
 	%__make clean
 	%__make %{?jobs:-j%{jobs}} \
 		EXTRACFLAGS="$RPM_OPT_FLAGS -Wno-unused -Wno-pointer-sign -fno-strict-aliasing"
