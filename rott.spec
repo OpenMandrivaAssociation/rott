@@ -123,14 +123,14 @@ popd
 %{_gamesdatadir}/%{name}/*
 %{_mandir}/man6/%{name}-shareware.6*
 %{_datadir}/applications/%{name}-shareware.desktop
-%{_datadir}/pixmaps/%{name}.png
+
 
 %files registered
 %defattr(-,root,root,-)
 %doc README doc/*.txt
 %{_gamesbindir}/%{name}-registered*
 %dir %{_gamesdatadir}/%{name}
-%{_gamesdatadir}/%{name}/*
+
 %{_mandir}/man6/%{name}-registered.6*
 %{_datadir}/applications/%{name}-registered.desktop
 %{_datadir}/pixmaps/%{name}.png
