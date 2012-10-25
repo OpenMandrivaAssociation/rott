@@ -70,8 +70,8 @@ pushd rott
 		%{name}-shareware.bin
 
 	
-	%__make clean 
-	%__make SHAREWARE=0 \	
+	%__make clean
+	%__make SHAREWARE=0 \
 		EXTRACFLAGS="$RPM_OPT_FLAGS -Wno-unused -Wno-pointer-sign -fno-strict-aliasing"
 	%__mv %{name} \
 		%{name}-registered.bin
@@ -134,3 +134,29 @@ popd
 %{_mandir}/man6/%{name}-registered.6*
 %{_datadir}/applications/%{name}-registered.desktop
 %{_datadir}/pixmaps/%{name}.png
+
+
+%changelog
+* Wed Oct 24 2012 Zombie Ryushu <ryushu@mandriva.org> 1.1.2-1mdv2012.0
++ Revision: 819674
+- remove dated patch
+- remove dated patch
+- Upgrade to 1.1.2
+
+* Wed Mar 31 2010 Zombie Ryushu <ryushu@mandriva.org> 1.1.1-1mdv2010.1
++ Revision: 530170
+- Fix up SPEC file
+- Fix Desktop Shortcuts
+- import rott
+
+
+* Wed Nov 11 2009 Toni Graffy <toni@links2linux.de> - 1.1.1-0.pm.1
+- update to 1.1.1
+* Thu Sep 04 2008 Toni Graffy <toni@links2linux.de> - 1.1-0.pm.1
+- update to 1.1
+* Sun Jun 22 2008 Toni Graffy <toni@links2linux.de> - 1.0-0.pm.2
+- corrected Group
+* Fri Nov 23 2007 Toni Graffy <toni@links2linux.de> - 1.0-0.pm.1
+- initial build for packman 1.0
+- spec file, patches, scipts  adapted from fedora package
+  from Hans de Goede <j.w.r.degoede@hhs.nl>
