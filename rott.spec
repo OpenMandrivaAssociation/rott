@@ -2,7 +2,7 @@
 
 Name:			rott
 Version:		1.1.2
-Release:		%mkrel 1
+Release:		%mkrel 1.1
 Summary:		Rise of the Triad
 Group:			Games/Arcade
 License:		GPL
@@ -70,8 +70,8 @@ pushd rott
 		%{name}-shareware.bin
 
 	
-	%__make clean
-	%__make %{?jobs:-j%{jobs}} \
+	%__make clean 
+	%__make SHAREWARE=0 \	
 		EXTRACFLAGS="$RPM_OPT_FLAGS -Wno-unused -Wno-pointer-sign -fno-strict-aliasing"
 	%__mv %{name} \
 		%{name}-registered.bin
