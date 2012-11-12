@@ -1,0 +1,9 @@
+sources:
+  "rott-1.0-registered.patch:"	dae372ab20c81df4d84c58e873271c7d0f53da53
+  "rott-1.1.2.tar.gz:"	2c8841934008b1afe704b6b8743d82492def35ba
+  "rott.autodlrc:"	9eaa4b706f9e92bffb1f9160e856666c0e7f52a3
+  "rott.png:"	d1dfcfad579fb885518652c8f3f51d4c430c9013
+  "rott-registered.desktop:"	a517822084b947990870b7da55b01e3ddd807f1e
+  "rott-registered.sh:"	b534d2484dc5a31c239771712435649a57e22d6a
+  "rott-shareware.desktop:"	d552c795b3a97b5fb7c56c0540729ca2f9082252
+  "rott-shareware.sh:"	1421e09a64683c811c92359cb76d4ee867d06be6
