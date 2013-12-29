@@ -2,7 +2,7 @@
 
 Name:			rott
 Version:		1.1.2
-Release:		%mkrel 1.1
+Release:		1.2
 Summary:		Rise of the Triad
 Group:			Games/Arcade
 License:		GPL
