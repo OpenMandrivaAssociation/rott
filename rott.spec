@@ -17,7 +17,7 @@ Source6:		%{name}.png
 # Note: this gets applied during build, not during prep!
 Source7:		%{name}-1.0-registered.patch
 BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires:  SDL-devel
+BuildRequires:  pkgconfig(sdl)
 BuildRequires:  SDL_mixer-devel
 
 %description

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rise of the Triad (Registered)
+GenericName=Rise of the Triad (Registered)
+Comment=RotT Registered launch script, this requires the registered data files
+Exec=rott-registered
+StartupNotify=false
+Terminal=false
+Type=Application
+Icon=rott
+Categories=Game;ActionGame;

@@ -1,0 +1,13 @@
+--- rott-1.0/rott/develop.h~	2007-05-11 10:24:32.000000000 +0200
++++ rott-1.0/rott/develop.h	2007-05-11 10:24:32.000000000 +0200
+@@ -41,8 +41,8 @@
+ 
+ #define BNACRASHPREVENT  1 //bna added 
+ // Make sure only one of the following are on at one time
+-#define SHAREWARE   1
+-#define SUPERROTT   0
++#define SHAREWARE   0
++#define SUPERROTT   1
+ #define SITELICENSE 0
+ 
+ // cute little dopefish thing, only works with special patch?
