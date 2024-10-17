@@ -6,7 +6,7 @@ Release:		2
 Summary:		Rise of the Triad
 Group:			Games/Arcade
 License:		GPL
-URL:			http://icculus.org/rott/
+URL:			https://icculus.org/rott/
 Source0:		http://icculus.org/rott/releases/%{name}-%{version}.tar.gz
 Source1:		%{name}-shareware.sh
 Source2:		%{name}-registered.sh
